@@ -5,6 +5,11 @@ import {
   etapasContribuicao
 } from "./dados.js";
 
+const imagemAcaoComunitaria =
+  new URL(
+    "../imagens/acao-comunitaria.png",
+    import.meta.url
+  ).href;
 
 function gerarCards(lista) {
   return lista
@@ -89,7 +94,7 @@ export const templates = {
 
         <figure class="hero-image">
           <img
-            src="../imagens/acao-comunitaria.png"
+            src="${imagemAcaoComunitaria}"
             alt="Crianças, familiares e voluntários reunidos em uma atividade educativa"
           >
 
