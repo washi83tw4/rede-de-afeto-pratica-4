@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Rede de Afeto - ONG fictícia para projeto acadêmico."
+  >
+
+  <title>
+    Rede de Afeto
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="../CSS/styles.css"
+  >
+</head>
+
+
+<body>
+
+  <a
+    class="skip-link"
+    href="#conteudo-principal"
+  >
+    Ir para o conteúdo principal
+  </a>
+
+
+  <header class="site-header">
+
+    <div class="container header-content">
+
+      <a
+        class="brand"
+        href="#inicio"
+        aria-label="Rede de Afeto - início"
+      >
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        >
+          RA
+        </span>
+
+        <span>
+          Rede de Afeto
+        </span>
+      </a>
+
+
+      <nav
+        class="main-nav"
+        aria-label="Navegação principal"
+      >
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span aria-hidden="true">
+            ☰
+          </span>
+
+          <span>Menu</span>
+        </button>
+
+
+        <ul
+          class="nav-list"
+          id="menu-principal"
+        >
+
+          <li>
+            <a
+              href="#inicio"
+              data-route-link="inicio"
+            >
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#inicio"
+              data-route-link="inicio"
+              data-scroll-target="quem-somos"
+            >
+              Quem somos
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#inicio"
+              data-route-link="inicio"
+              data-scroll-target="atuacao"
+            >
+              Como atuamos
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#projetos"
+              data-route-link="projetos"
+            >
+              Projetos sociais
+            </a>
+          </li>
+
+
+          <li class="nav-dropdown">
+
+            <button
+              class="dropdown-toggle"
+              type="button"
+              aria-expanded="false"
+            >
+              Participar
+              <span aria-hidden="true">
+                ▾
+              </span>
+            </button>
+
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a
+                  href="#cadastro"
+                  data-route-link="cadastro"
+                >
+                  Cadastro de apoiadores
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#projetos"
+                  data-route-link="projetos"
+                  data-scroll-target="voluntariado"
+                >
+                  Voluntariado
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#projetos"
+                  data-route-link="projetos"
+                  data-scroll-target="doacoes"
+                >
+                  Campanhas de doação
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+
+          <li>
+            <a
+              href="#inicio"
+              data-route-link="inicio"
+              data-scroll-target="contato"
+            >
+              Contato
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main
+    id="conteudo-principal"
+    tabindex="-1"
+  ></main>
+
+
+  <footer class="site-footer">
+
+    <div class="container footer-content">
+
+      <p>
+        <strong>Rede de Afeto</strong>
+      </p>
+
+      <p>
+        Projeto acadêmico com organização fictícia.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/sweetalert2@11"
+  ></script>
+
+  <script
+    type="module"
+    src="../JS/app.js"
+  ></script>
+
+</body>
+
+</html>
