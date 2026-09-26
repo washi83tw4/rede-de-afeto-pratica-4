@@ -1,0 +1,28 @@
+{
+  "name": "pratica-4-versionamento-acessibilidade",
+  "version": "1.0.0",
+  "description": "Projeto acadêmico desenvolvido na disciplina **Desenvolvimento Front-End Para Web**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/washi83tw4/rede-de-afeto-pratica-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/washi83tw4/rede-de-afeto-pratica-4/issues"
+  },
+  "homepage": "https://github.com/washi83tw4/rede-de-afeto-pratica-4#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "vite": "^8.3.1"
+  }
+}
