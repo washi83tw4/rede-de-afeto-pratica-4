@@ -7,7 +7,7 @@
   --cor-primaria: #245B78;
   --cor-primaria-clara: #DCECF4;
 
-  --cor-secundaria: #2F7D6D;
+  --cor-secundaria: #28695C;
   --cor-secundaria-clara: #DDF1EB;
 
   --cor-destaque: #F2B544;
@@ -65,10 +65,8 @@ html {
 
 body {
   margin: 0;
-
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
-
   font-family: var(--fonte-principal);
   font-size: var(--texto-base);
   line-height: 1.6;
@@ -137,7 +135,6 @@ a {
 
 .site-header {
   position: relative;
-
   z-index: 50;
 
   background-color:
@@ -203,6 +200,11 @@ a {
 
 .main-nav {
   position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: var(--espaco-3);
 }
 
 .nav-list {
@@ -246,6 +248,29 @@ a {
 
 .menu-toggle {
   display: none;
+}
+
+.contrast-toggle {
+  padding:
+    0.55rem
+    0.8rem;
+
+  white-space: nowrap;
+
+  background-color:
+    var(--cor-branca);
+
+  color:
+    var(--cor-primaria-escura);
+}
+
+.contrast-toggle:hover,
+.contrast-toggle:focus-visible {
+  background-color:
+    var(--cor-destaque);
+
+  color:
+    var(--cor-primaria-escura);
 }
 
 .dropdown-toggle {
@@ -1251,7 +1276,6 @@ input[type="checkbox"] {
    RESPONSIVIDADE
 ======================================== */
 
-
 /* 1 - TELAS GRANDES */
 
 @media (max-width: 1200px) {
@@ -1263,7 +1287,6 @@ input[type="checkbox"] {
     gap:
       var(--espaco-5);
   }
-
 }
 
 
@@ -1290,7 +1313,6 @@ input[type="checkbox"] {
   .hero-image img {
     height: 280px;
   }
-
 }
 
 
@@ -1325,6 +1347,12 @@ input[type="checkbox"] {
   }
 
   .main-nav {
+    width: 100%;
+
+    flex-wrap: wrap;
+  }
+
+  .contrast-toggle {
     width: 100%;
   }
 
@@ -1418,7 +1446,6 @@ input[type="checkbox"] {
   .hero-image img {
     height: 260px;
   }
-
 }
 
 
@@ -1447,7 +1474,6 @@ input[type="checkbox"] {
   .hero-image img {
     height: 230px;
   }
-
 }
 
 
@@ -1489,7 +1515,6 @@ input[type="checkbox"] {
     margin-top:
       var(--espaco-2);
   }
-
 }
 
 
@@ -1509,5 +1534,78 @@ input[type="checkbox"] {
     transition-duration:
       0.01ms !important;
   }
+}
 
+
+/* ========================================
+   MODO DE ALTO CONTRASTE
+======================================== */
+
+body.alto-contraste {
+  --cor-primaria-escura: #000000;
+  --cor-primaria: #000000;
+  --cor-primaria-clara: #FFFFFF;
+
+  --cor-secundaria: #000000;
+  --cor-secundaria-clara: #FFFFFF;
+
+  --cor-destaque: #FFD800;
+
+  --cor-sucesso: #005A00;
+  --cor-sucesso-clara: #FFFFFF;
+
+  --cor-erro: #B00020;
+
+  --cor-branca: #FFFFFF;
+  --cor-fundo: #FFFFFF;
+  --cor-cinza-claro: #666666;
+  --cor-cinza: #111111;
+  --cor-texto: #000000;
+  --cor-preta: #000000;
+}
+
+body.alto-contraste .card,
+body.alto-contraste .choice-card,
+body.alto-contraste .contact-card,
+body.alto-contraste .process-item,
+body.alto-contraste fieldset,
+body.alto-contraste .page-links {
+  border: 2px solid #000000;
+
+  box-shadow: none;
+}
+
+body.alto-contraste a {
+  text-decoration-thickness: 2px;
+
+  text-underline-offset: 0.2em;
+}
+
+body.alto-contraste .button,
+body.alto-contraste button {
+  border: 2px solid #000000;
+}
+
+body.alto-contraste :focus-visible {
+  outline: 4px solid #FFD800;
+
+  outline-offset: 4px;
+}
+
+body.alto-contraste input,
+body.alto-contraste select,
+body.alto-contraste textarea {
+  border-color: #000000;
+
+  background-color: #FFFFFF;
+
+  color: #000000;
+}
+
+body.alto-contraste .alert {
+  border: 2px solid #000000;
+
+  background-color: #FFFFFF;
+
+  color: #000000;
 }
